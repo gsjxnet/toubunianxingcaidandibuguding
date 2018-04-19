@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<meta charset="UTF-8">
+<title>Montefiore</title>
+<style type="text/css">
+@charset "utf-8";/* CSS Document */
+html,body,h1,h2,h3,h4,h5,h6,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,images {border:medium none;margin:0;padding:0;list-style-type:none;vertical-align:middle;font-weight:normal;}
+button,input,select,textarea {font:16px "Microsoft Yahei",tahoma,Srial,helvetica,sans-serif;color:#000;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;width:100%;}
+html,body{width: 100%; height: 100%;}
+em {font-style:normal;}
+ul,ol {list-style:none;}
+a {text-decoration:none;color:#000;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+a:hover,a:active {text-decoration:none;}
+.clear {clear:both;font-size:0px;line-height:0px}
+.clearfix:before,.clearfix:after {content:" ";display:table;}
+.clearfix:after {clear:both;}
+.hidden {display:none;}
+	.nav{
+		width: 100%;height: 245px; position: fixed; z-index: 78;
+		-webkit-transition: -webkit-transform 0.5s;
+	    transition: -webkit-transform 0.5s;
+	    transition: transform 0.5s;
+	    transition: transform 0.5s,
+	    -webkit-transform 0.5s;
+}
+	.nav_daohang{
+		width: 100%;height: 65px;position: absolute;top: 0; background-color: #d2b05a;
+	}
+	.nav_daohang ul{
+		width: 580px; margin: 0 auto;
+	}
+	.nav_daohang ul li a{
+		display:inline-block; padding: 0 15px; float: left;line-height: 65px; color: #fff;position: relative;
+	}
+	.nav_daohang ul li a:after{
+	    content: '';
+	    position: absolute;
+	    left: 50%;
+	    -webkit-transform: translate(-50%, 0);
+	    transform: translate(-50%, 0);
+	    width: 0px;
+	    height: 1px;
+	    background-color: #fff;
+	    -webkit-transition: all 0.3s;
+	    transition: all 0.3s;
+	}
+	.nav_daohang ul li a:before{
+		content: '';
+		position: absolute;
+		left: 50%;
+		-webkit-transform: translate(-50%, 0);
+		transform: translate(-50%, 0);
+		width: 0px;
+		height: 1px;
+		background-color: #fff;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	.nav_daohang ul li a:after{
+		top: 15px;
+	}
+	.nav_daohang ul li a:before{
+		bottom:15px;
+	}
+	.nav_daohang ul li:hover a:after{
+        width: 15px;
+	}
+	.nav_daohang ul li:hover a:before{
+        width: 15px;
+	}
+	.nav_xb{
+		width: 178px;height: 182px;position: absolute;top: 65px; right: 8%; background-image: url(images/green-bg.png);background-size: cover; background-position: bottom; background-repeat: no-repeat;
+	}
+	.nav_xb h4{
+		color: #fff;
+		line-height: 65px;
+		text-align: center;
+	}
+	.is-hidden{
+		-webkit-transform: translate3d(0, -110%, 0);
+	    transform: translate3d(0, -110%, 0);
+	    -webkit-transition: -webkit-transform 0.5s;
+	    transition: -webkit-transform 0.5s;
+	    transition: transform 0.5ss;
+	    transition: transform 0.5s,
+	    -webkit-transform 0.5s;
+	}
+	.foot{
+		width: 100%;
+		height: 268px;
+		background-image: url(images/01-06.jpg);
+		display: flex;
+		flex-direction:column;
+		justify-content:center;
+		position: fixed;
+		bottom: 0;
+		z-index: 1
+	}
+	.logo-c{
+		text-align: center;
+	}
+	.copy-c ul{
+        display: flex;
+		flex-direction:row;
+		justify-content:center;
+	}
+	.copy-c ul li{ display: inline-block; padding: 0 10px; color: #d2b05a;line-height: 35px;}
+	.copy-c ul li a{ color: #d2b05a; }
+	.copy-c ul li:hover{color: #fff;}
+	.copy-c ul li:hover a{color: #fff;}
+.centent{
+	width: 100%;
+	height: 3000px;
+	margin-bottom: 268px;
+	position: absolute;
+	background-color: #f00;
+	z-index: 4
+}
+</style>
+</head>
+<body>
+<!-- nav是样式，cd-auto-hide-header是调用动画样式 -->
+<div class="nav cd-auto-hide-header">
+	<div class="nav_daohang">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Residences</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Residences</a></li>
+			<li><a href="#">Residences</a></li>
+			<li><a href="#">Home</a></li>
+		</ul>
+	</div>
+	<div class="nav_xb" style="display: block;">
+		<h4>Residences<br/>Residences</h4>
+	</div>
+</div>
+<div class="centent" style="width: 100%; height: 3400px;"></div>
+<div class="yincang"></div>
+<div class="foot">
+	<div class="logo-c">
+		<a href="#" title="top">
+			<img src="images/footer-logo.png" alt="" />
+		</a>
+	</div>
+	<div class="copy-c">
+		<ul>
+			<li>©2018 montefiore</li>
+			<li><a href="#">privacy</a></li>
+			<li><a href="#">disclaimer</a></li>
+			<li>site by <a href="#" target="_blank" rel="noopener">hoyne</a></li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+// window.onload=function(){
+//     $(window).on("scroll",function(){
+// 	    var scroll = $(window).scrollTop();
+//         if (scroll >= 50) {
+//             windowAddMouseWheel();
+// 			function windowAddMouseWheel() {
+// 				var scrollFunc = function (e) {
+// 					e = e || window.event;
+// 					if (e.wheelDelta) {//判断浏览器IE，谷歌滑轮事件
+// 						if (e.wheelDelta > 0) { //当滑轮向上滚动时
+// 						$(".nav").removeClass("is-hidden");
+// 						}
+// 						if (e.wheelDelta < 0) { //当滑轮向下滚动时
+// 						$(".nav").addClass("is-hidden");
+// 						}
+// 					} else if (e.detail) {//Firefox滑轮事件
+// 						if (e.detail> 0) { //当滑轮向上滚动时
+// 						$(".nav").removeClass("is-hidden");
+// 						}
+// 						if (e.detail< 0) { //当滑轮向下滚动时
+// 						$(".nav").addClass("is-hidden");
+// 						}
+// 				}
+// 			};
+// 			//给页面绑定滑轮滚动事件
+// 			if (document.addEventListener) {
+// 			document.addEventListener('DOMMouseScroll', scrollFunc, false);
+// 			}
+// 			//滚动滑轮触发scrollFunc方法
+// 			window.onmousewheel = document.onmousewheel = scrollFunc;
+// 			}
+//         }
+//       // else {
+//      //    $(".nav").removeClass("is-hidden");
+// 	    // }
+//     });
+// }
+</script>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script type='text/javascript' src='js/jquery.js'></script>
+<!--float-menu不能删除  -->
+<script type='text/javascript' src='js/float-menu.js'></script>
+</body>
+</html>
